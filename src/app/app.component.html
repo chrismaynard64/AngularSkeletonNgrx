@@ -1,7 +1,40 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-<h1>Testing</h1>
+
+
+        <mat-toolbar color="primary">
+            <button mat-flat-button
+            color="primary" class="banner"
+            routerLink="/">
+              Application
+          </button>  
+          <!--
+            <div class="bar-item">
+            <a  mat-flat-button  color="primary" href="#">Auth0 - Angular</a>
+          </div>
+        -->
+          <div class="bar-item">
+            <button mat-flat-button
+            color="primary"
+            routerLink="/">
+              Home
+          </button>
+        </div>
+        <div class="bar-item">
+            <button mat-flat-button
+            color="primary"
+              routerLink="/page"
+              >
+                First
+            </button>
+          </div>
+        </mat-toolbar>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
 
 <router-outlet></router-outlet>
 
