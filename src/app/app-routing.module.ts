@@ -7,7 +7,7 @@ import { NotFoundComponent } from './containers/not-found/not-found.component';
 const routes: Routes = [
   { path: '',      component: HomeComponent, pathMatch: 'full' },
   { path: 'home',      component: HomeComponent, pathMatch: 'full' },
-  { path: 'page',      component: PageComponent, pathMatch: 'full' },
+  { path: 'hero',      component: PageComponent, pathMatch: 'full' },
   { path: '**',    component: NotFoundComponent }
 
 ];

@@ -1,3 +1,17 @@
-<p>
-  page works!
+
+<div>
+  <p>
+Items
 </p>
+
+<button (click)="add()">Add</button>
+
+  <app-hero [heroes]="items$ | async"></app-hero>
+
+
+    <div *ngFor="let item of items">
+      {{item.name}}
+    </div>
+
+
+</div>
