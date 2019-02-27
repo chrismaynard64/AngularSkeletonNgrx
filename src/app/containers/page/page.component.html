@@ -4,13 +4,13 @@
 Items
 </p>
 
-<button (click)="add()">Add</button>
+ <input type="text" class="" [(ngModel)]="newName"> <button (click)="add()">Add</button>
 
   <app-hero [heroes]="items$ | async"></app-hero>
 
 
     <div *ngFor="let item of items">
-      {{item.name}}
+      {{item.name}}  <a (click)="edit(item)">edit</a> 
     </div>
 
 

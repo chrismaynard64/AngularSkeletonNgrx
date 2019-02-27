@@ -18,6 +18,9 @@ import { CustomRouterStateSerializer } from './store/customRouterStateSerializer
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { HeroEffects } from './store/hero/hero.effects';
 import { EffectsModule } from '@ngrx/effects';
+import { FormsModule } from '@angular/forms';
+import { HeroEditComponent } from './components/hero-edit/hero-edit.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import { EffectsModule } from '@ngrx/effects';
     PageComponent,
     HomeComponent,
     NotFoundComponent,
-    HeroComponent
+    HeroComponent,
+    HeroEditComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     NgMaterialModule,
     StoreModule.forRoot(reducers, { metaReducers }),
@@ -43,7 +49,8 @@ import { EffectsModule } from '@ngrx/effects';
     )
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[ HeroEditComponent ]
 })
 export class AppModule { }
   
